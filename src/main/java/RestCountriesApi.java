@@ -1,4 +1,4 @@
-/*Created by */
+/*Created by Sinduri Muthyam*/
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
+import java.util.Scanner;
 
 public class RestCountriesApi {
 
@@ -13,8 +14,15 @@ public class RestCountriesApi {
     public static void main(String args[]) {
         RestCountriesApi restCountriesApi = new RestCountriesApi();
         String country = "aruba";
-        String capital = restCountriesApi.getCapitalFromCountry(country);
-        System.out.println("Capital of "+country+" is "+capital);
+        System.out.println("Please enter the country code or name:");
+        Scanner s = new Scanner(System.in);
+        country = s.nextLine();
+        while(true) {
+            String capital = restCountriesApi.getCapitalFromCountry(country);
+            System.out.println("Capital of " + country + " is " + capital);
+            System.out.println("Please enter the country code or name:");
+            country = s.nextLine();
+        }
     }
     public String getCapitalFromCountry(String country) {
         String result=null;
@@ -38,7 +46,7 @@ public class RestCountriesApi {
 
             String output;
             while ((output = br.readLine()) != null) {
-                System.out.println(output);
+                //System.out.println(output);
                 result = output;
             }
             if(result !=null) {
