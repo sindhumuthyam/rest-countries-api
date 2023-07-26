@@ -4,7 +4,8 @@
 https://docs.google.com/spreadsheets/d/1vqQaKn03cMMB1jgc_k6Hjov-wDSitV9b9TTGUgkyFzw/edit?usp=sharing 
 
 ### OUTPUT
-![output-screenshot](output-screenshot.png)
+<img src="output-screenshot.png" alt="alt text" width="400" height="300">
+
 ### Description
 Using the provided REST service, create a program that returns, at minimum, capital city based on user input for name or code.<br>
 Write several tests that validate positive and negative scenario’s<br>
