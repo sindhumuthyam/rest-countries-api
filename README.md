@@ -2,6 +2,9 @@
 
 ### Testcases:
 https://docs.google.com/spreadsheets/d/1vqQaKn03cMMB1jgc_k6Hjov-wDSitV9b9TTGUgkyFzw/edit?usp=sharing 
+
+### OUTPUT
+![output-screenshot](output-screenshot.png)
 ### Description
 Using the provided REST service, create a program that returns, at minimum, capital city based on user input for name or code.<br>
 Write several tests that validate positive and negative scenario’s<br>
